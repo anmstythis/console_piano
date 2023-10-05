@@ -11,7 +11,7 @@ namespace piano
             Console.WriteLine("Нажмите \"Z\" одновременно с клавишей для октавы, чтобы сменить её.");
             Console.WriteLine();
             Console.WriteLine("WETYU - чёрные клавиши.");
-            Console.WriteLine("ASDFGHJ - белые клавиши.");
+            Console.WriteLine("ASDFGH - белые клавиши.");
 
             char keyy = '1';
 
@@ -80,11 +80,6 @@ namespace piano
                             sound(octave, 11);
                             break;
                         }
-                    case 'j':
-                        {
-                            sound(octave, 12);
-                            break;
-                        }
                     case 'z':
                         {
                             octave = OctaveChange(oct);
@@ -133,8 +128,8 @@ namespace piano
             }
             else if (act.Key == ConsoleKey.F7)
             {
-                        int[] seventhOctave = new int[] { 1047, 1109, 1175, 1245, 1319, 1397, 1480, 1568, 1661, 1760, 1865, 1976 };
-                        return seventhOctave;
+                int[] seventhOctave = new int[] { 1047, 1109, 1175, 1245, 1319, 1397, 1480, 1568, 1661, 1760, 1865, 1976 };
+                return seventhOctave;
             }
             else if (act.Key == ConsoleKey.F8)
             {
